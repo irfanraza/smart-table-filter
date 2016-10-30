@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="smartTableApp">
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+		<h3 style="color:#0000FF"> Not Supported </h3>
+	<![endif]-->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800'rel='stylesheet' type='text/css'>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<title>Smart table filter</title>
+	</head>
+	<body ng-controller="HomeController as mainCtrl" class="container-fluid">
+		
+		<section class="content" style="position:relative;" ui-view>
+		<!-- view goes here --> 
+		</section>
+
+		<!-- Load all scripts (AMD can be used while in prod) -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.30/angular.min.js"></script>
+		<script type="text/javascript" src="app/vendor/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/controllers/HomeController.js"></script>
+		<script type="text/javascript" src="app/controllers/TableController.js"></script>
+		<script type="text/javascript" src="app/directives/SmartTableFilterDirective.js"></script>
+		<script type="text/javascript" src="app/filters/TableFilter.js"></script>
+
+	</body>
+</html>

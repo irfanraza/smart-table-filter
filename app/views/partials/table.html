@@ -1,0 +1,17 @@
+<!--View for departments data grid-->
+
+<span ui-sref="home()" class="navi"> Go back </span>
+<div class='tableContainer'>
+	<smart-table-filter label="Filter data" filterData='filteredData'></smart-table-filter>
+	<p class="bg-info">...</p>
+	<div class="row">
+  		<div class="col-xs-6 col-md-4"><strong>Department</strong></div>
+  		<div class="col-xs-6 col-md-4"><strong>Budget</strong></div>
+  		<div class="col-xs-6 col-md-4"><strong>Phone</strong></div>
+	</div>
+	<div class="row" ng-repeat='data in filteredData | tableFilter'>
+  		<div class="col-xs-6 col-md-4">{{data.name}}</div>
+  		<div class="col-xs-6 col-md-4">{{data.budget}}</div>
+  		<div class="col-xs-6 col-md-4">{{data.phone}}</div>
+	</div>
+</div>
