@@ -5,23 +5,23 @@
  * it will allow records to show  only when selected=true
  *
  */
-(function(angular){
+(function(angular) {
 
-var app = angular.module('smartTableApp.controllers');
+    var app = angular.module('smartTableApp.controllers');
 
-app.filter('tableFilter', function() {
-  return function( items) {
-    var filtered = [];
-    angular.forEach(items, function(item) {
+    app.filter('tableFilter', function() {
+        return function(items) {
+            var filtered = [];
+            angular.forEach(items, function(item) {
 
-      //Check record if it has selected as true then add it to filtered list
-      if(item.selected === true) {
-        filtered.push(item);
-      }
-      
+                //Check record if it has selected as true then add it to filtered list
+                if (item.selected === true) {
+                    filtered.push(item);
+                }
+
+            });
+            return filtered;
+        };
     });
-    return filtered;
-  };
-});
 
 })(angular);

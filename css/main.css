@@ -1,23 +1,22 @@
 @charset "UTF-8";
-html { 
-    height: 100%; 
-    margin-bottom: 1px; 
+html {
+    height: 100%;
+    margin-bottom: 1px;
 }
 .dataFilter .filterLink {
-	width: 100%;
-	max-width:115px;
+    width: 100%;
+    max-width: 115px;
     margin-top: 10px;
 }
-
 .dataFilter .filterLink .filterLabel {
     width: 80%;
     color: #6f6e6e;
 }
-
 .dataFilter .filterBox {
     display: none;
     position: absolute;
-	/*margin-left: 66px; */
+    /*margin-left: 66px; */
+    
     width: 290px;
     z-index: 3000;
     height: 350px;
@@ -25,60 +24,55 @@ html {
 .dataFilter .filterBox.active {
     display: block;
 }
-
 .dataFilter .filterBox .filterBody .box {
-	border: 1px solid lightgray;
-	position: relative;
-	background-color: white;
-	margin-bottom: 21px;
+    border: 1px solid lightgray;
+    position: relative;
+    background-color: white;
+    margin-bottom: 21px;
     margin-top: 10px;
     width: 100%;
     height: 100%;
     box-shadow: 0 0 1em #d3d3d3;
 }
-
-.dataFilter .filterBox .filterBody .leftUpArrow { 
-	position: relative;
-	background: #fff;
-	border: 1px solid #d3d3d3;
-	box-shadow: 0 0 1em #d3d3d3;
+.dataFilter .filterBox .filterBody .leftUpArrow {
+    position: relative;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 0 1em #d3d3d3;
 }
 .dataFilter .filterBox .filterBody .leftUpArrow:after,
-.dataFilter .filterBox .filterBody .leftUpArrow:before { 
-	bottom: 100%;
-	left: 14%;
-	border: solid transparent;
-	content: " ";
-	height: 0; 
-	width: 0;
-	position: absolute; 
-	pointer-events: none;
+.dataFilter .filterBox .filterBody .leftUpArrow:before {
+    bottom: 100%;
+    left: 14%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
 }
-.dataFilter .filterBox .filterBody .leftUpArrow:after { 
-	border-color: rgba(255, 255, 255, 0); 
-	border-bottom-color: #fff;
-	border-width: 10px; 
-	margin-left: -10px;
+.dataFilter .filterBox .filterBody .leftUpArrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
 }
-.dataFilter .filterBox .filterBody .leftUpArrow:before { 
-	border-color: rgba(211, 211, 211, 0);
-	border-bottom-color: #d3d3d3;
-	border-width: 11px; 
-	margin-left: -11px; 
+.dataFilter .filterBox .filterBody .leftUpArrow:before {
+    border-color: rgba(211, 211, 211, 0);
+    border-bottom-color: #d3d3d3;
+    border-width: 11px;
+    margin-left: -11px;
 }
-
 .dataFilter .filterBox .filterBody .box .boxBody {
     height: 340px;
-    margin: 12px 17px  0px 17px;
+    margin: 12px 17px 0px 17px;
     overflow: hidden;
 }
-
 .dataFilter .filterBox .filterBody .box .boxBody .searchBox {
     border-bottom: 1px solid #d3d3d3;
     margin-left: -5px;
     padding-bottom: 5px;
 }
-
 .dataFilter .filterBox .filterBody .box .boxBody .list {
     background-color: #f2f5f8;
     height: 219px;
@@ -89,11 +83,10 @@ html {
     padding-top: 7px;
     width: 246px;
 }
-
 .dataFilter .filterBox .filterBody .box .boxBody .buttons {
-	border-top: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
 }
-.dataFilter .filterBox .filterBody .box .boxBody  input[type="text"] {
+.dataFilter .filterBox .filterBody .box .boxBody input[type="text"] {
     border: 1px solid #d3d3d3;
     border-radius: 2px;
     color: #777;
@@ -104,95 +97,94 @@ html {
     transition: all 0.4s ease 0s;
     width: 198px;
     padding-right: 49px;
-    -webkit-input-placeholder:#fff;
+    -webkit-input-placeholder: #fff;
 }
-
 .dataFilter .filterBox .filterBody .box .boxBody .noClear::-ms-clear {
     display: none;
 }
-
 .dataFilter .filterBox .filterBody .box .boxBody .buttons .filterButton {
-	margin-bottom: 13px;
+    margin-bottom: 13px;
     margin-top: 12px;
     position: relative;
     width: 120px;
 }
-
 .dataFilter .filterBox .filterBody .box .boxBody .buttons .cancelButton {
-	float: left;
-	width: 47%;
+    float: left;
+    width: 47%;
 }
-
 .dataFilter .filterBox .filterBody .box .boxBody .buttons .okButton {
-	float: left;
+    float: left;
     margin-left: 15px;
     width: 47%;
 }
-
 /*check boxes*/
 /* Base for label styling */
+
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:not(:checked),
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px;
+    position: absolute;
+    left: -9999px;
 }
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:not(:checked) + label,
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:checked + label {
-  position: relative;
-  padding-left: 25px;
-  cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
 }
-
 /* checkbox aspect */
+
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:not(:checked) + label:before,
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:checked + label:before {
-  content: '';
-  position: absolute;
-  left:0; top: 2px;
-  width: 17px; height: 17px;
-  border: 1px solid #aaa;
-  background: #f8f8f8;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3)
 }
 /* checked mark aspect */
+
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:not(:checked) + label:after,
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:checked + label:after {
-  content: "\2714";
-  position: absolute;
-  top: 0; left: 4px;
-  font-size: 14px;
-  color: #09ad7e;
-  transition: all .2s;
+    content: "\2714";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-size: 14px;
+    color: #09ad7e;
+    transition: all .2s;
 }
 /* checked mark aspect changes */
+
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
+    opacity: 0;
+    transform: scale(0);
 }
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
-
 /* accessibility */
+
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:checked:focus + label:before,
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes [type="checkbox"]:not(:checked):focus + label:before {
-  border: 1px dotted blue;
+    border: 1px dotted blue;
 }
-
 .dataFilter .closeLink {
     float: right;
     color: burlywood;
 }
-
 /* hover style just for information */
+
 .dataFilter .filterBox .filterBody .box .boxBody .list .checkboxes label:hover:before {
-  border: 1px solid #4778d9!important;
+    border: 1px solid #4778d9!important;
 }
 .navi {
     color: #09ad7e;
     font-weight: bold;
     margin-bottom: 5px;
 }
-
