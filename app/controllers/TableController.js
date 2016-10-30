@@ -7,9 +7,7 @@
 (function(angular) {
 
     var app = angular.module('smartTableApp.controllers');
-
     app.controller('TableController', function($scope) {
-
         //Sample data feed for department (should come from back-end)
         $scope.filteredData = [{
             "name": "Computer Science",
@@ -69,7 +67,6 @@
         }];
 
         // Any custom logic for table goes here
-
     });
 
 })(angular);
